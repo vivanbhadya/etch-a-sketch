@@ -1,0 +1,35 @@
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    justify-content: center;
+    align-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+}
+
+.grid-item{
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.buttons{
+    width: 50%;
+    margin: auto;
+    padding: 3em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
